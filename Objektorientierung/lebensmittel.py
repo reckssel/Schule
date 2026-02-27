@@ -29,3 +29,4 @@ class Lebensmittel:
         return self.__zuckergehalt
     def set_zuckergehlt(self, value):
         self.__zuckergehalt=value
+    # -------------------------
