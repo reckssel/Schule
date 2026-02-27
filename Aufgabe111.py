@@ -1,15 +1,13 @@
 def taschenrechner():
-    """Ein einfacher Taschenrechner in Python."""
-    print("Willkommen beim Python Taschenrechner")
-    print("Wählen Sie eine Operation:")
-    print("1: Addieren (+)")
-    print("2: Subtrahieren (-)")
-    print("3: Multiplizieren (*)")
-    print("4: Dividieren (/)")
-    print("5: Beenden")
-
     while True:
-     
+        """Ein einfacher Taschenrechner in Python."""
+        print("Willkommen beim Python Taschenrechner")
+        print("Wählen Sie eine Operation:")
+        print("1: Addieren (+)")
+        print("2: Subtrahieren (-)")
+        print("3: Multiplizieren (*)")
+        print("4: Dividieren (/)")
+        print("5: Beenden")
         wahl = input("Geben Sie die Nummer der Wahl ein (1/2/3/4/5): ")
 
      
