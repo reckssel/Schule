@@ -1,11 +1,14 @@
 import tkinter as tk
+from tkinter import PhotoImage
 root = tk.Tk()
 root.geometry("400x300")
-b1= '#ff0000'
-l1 = tk.Label(
-    root,
-    text="Hallo Welt",
-    bg=b1
-)
-l1.pack()
+class gui:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Meine GUI")
+        self.img = tk.PhotoImage(file="C:\\Users\\zinemil\\Documents\\Schule\\AufgabenPython\\Oberflächen\\Download-removebg-preview.png")
+        self.label = tk.Label(self.master, image=self.img)
+        self.label.pack()
+
+GUI = gui(root)
 root.mainloop()
