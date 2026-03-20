@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import PhotoImage
+
 root = tk.Tk()
 root.geometry("400x300")
 class gui:
