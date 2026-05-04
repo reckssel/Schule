@@ -1,0 +1,30 @@
+Linux Shell – Spickzettel
+
+GRUNDLAGEN ls # Dateien anzeigen ls -l # Details cat file.txt # Datei
+anzeigen mkdir ordner # Ordner erstellen touch file.txt # Datei
+erstellen [ -f file.txt ] # Datei existiert? [ -d ordner ] # Ordner
+existiert?
+
+UMLENKUNG > # überschreibt Datei >> # hängt an echo “Text” > file.txt
+echo “Mehr” >> file.txt
+
+PIPE command1 | command2 cat file.txt | grep “test”
+
+GREP grep “wort” file.txt grep -i “wort” file.txt grep -r “wort” .
+
+CUT cut -d “;” -f1 file.txt
+
+SORT sort file.txt sort -r file.txt sort -n file.txt
+
+UNIQ sort file.txt | uniq
+
+STRINGLÄNGE TEXT=“Hallo” echo ${#TEXT}
+
+ARRAYS arr=(a b c) echo ${arr[0]} echo
+${arr[@]} printf "%s " "${arr[@]}” | shuf
+
+TAR (BACKUP) tar -cvf backup.tar ordner/ tar -xvf backup.tar tar -czvf
+backup.tar.gz ordner/ tar -xzvf backup.tar.gz
+
+MERKLISTE grep = suchen cut = Spalten sort = sortieren uniq = doppelte
+entfernen | = verbinden > = speichern tar = Backup
