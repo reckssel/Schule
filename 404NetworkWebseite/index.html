@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Network GmbH – IT-Service & Netzwerke</title>
+  <title>404 Network GmbH</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Infoleiste -->
+  <div class="topbar">
+    <div class="container topbar-inhalt">
+      <span>&#128222; Notfall-Hotline 24/7: <strong>0123 / 404 911</strong></span>
+      <span class="nur-desktop">&#128336; Mo–Fr 8–18 Uhr · &#9993; info@404-network.example</span>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <header class="header">
@@ -15,8 +23,11 @@
       <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">&#9776;</button>
       <nav class="nav-links" id="navLinks">
         <a href="#leistungen">Leistungen</a>
+        <a href="#preise">Preise</a>
         <a href="#ueber-uns">Über uns</a>
-        <a href="#team">Team</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#karriere">Karriere</a>
+        <a href="#faq">FAQ</a>
         <a href="#kontakt" class="btn btn-small">Kontakt</a>
       </nav>
     </div>
@@ -44,10 +55,10 @@
   <!-- Zahlen -->
   <section class="zahlen">
     <div class="container zahlen-grid">
-      <div><strong>99,9 %</strong><span>Verfügbarkeit</span></div>
-      <div><strong>150+</strong><span>zufriedene Kunden</span></div>
+      <div><strong><span class="zaehler" data-ziel="99.9" data-komma="1">0</span> %</strong><span>Verfügbarkeit</span></div>
+      <div><strong><span class="zaehler" data-ziel="150">0</span>+</strong><span>zufriedene Kunden</span></div>
       <div><strong>24/7</strong><span>Notfall-Support</span></div>
-      <div><strong>12</strong><span>Jahre Erfahrung</span></div>
+      <div><strong><span class="zaehler" data-ziel="12">0</span></strong><span>Jahre Erfahrung</span></div>
     </div>
   </section>
 
@@ -56,27 +67,146 @@
     <div class="container">
       <h2>Unsere Leistungen</h2>
       <p class="bereich-text">Von der Planung bis zum Betrieb – alles aus einer Hand.</p>
-      <div class="karten">
-        <article class="karte">
+      <div class="karten drei">
+        <article class="karte einblenden">
           <div class="icon">&#9729;</div>
           <h3>Cloud-Lösungen</h3>
           <p>Migration, Betrieb und Backup Ihrer Daten in sicheren Rechenzentren in Deutschland.</p>
+          <ul class="mini-liste"><li>Microsoft 365 &amp; Nextcloud</li><li>Tägliche Backups</li><li>Server-Hosting</li></ul>
         </article>
-        <article class="karte">
+        <article class="karte einblenden">
           <div class="icon">&#128279;</div>
           <h3>Netzwerktechnik</h3>
-          <p>Planung und Installation von LAN, WLAN, VPN und Firewalls – sauber dokumentiert.</p>
+          <p>Planung und Installation von LAN, WLAN und VPN – sauber dokumentiert.</p>
+          <ul class="mini-liste"><li>Strukturierte Verkabelung</li><li>WLAN-Ausleuchtung</li><li>Standortvernetzung per VPN</li></ul>
         </article>
-        <article class="karte">
+        <article class="karte einblenden">
           <div class="icon">&#128737;</div>
           <h3>IT-Sicherheit</h3>
-          <p>Schutz vor Viren, Phishing und Ausfällen durch Monitoring und regelmäßige Updates.</p>
+          <p>Schutz vor Viren, Phishing und Ausfällen durch Monitoring und Updates.</p>
+          <ul class="mini-liste"><li>Firewall &amp; Virenschutz</li><li>Mitarbeiterschulungen</li><li>Penetrationstests</li></ul>
         </article>
-        <article class="karte">
+        <article class="karte einblenden">
           <div class="icon">&#128295;</div>
           <h3>IT-Support</h3>
           <p>Schnelle Hilfe per Fernwartung oder vor Ort – mit festen Ansprechpartnern.</p>
+          <ul class="mini-liste"><li>Ticketsystem</li><li>Fernwartung</li><li>Vor-Ort-Service</li></ul>
         </article>
+        <article class="karte einblenden">
+          <div class="icon">&#128187;</div>
+          <h3>Hardware &amp; Arbeitsplätze</h3>
+          <p>Beschaffung, Einrichtung und Entsorgung von PCs, Laptops, Druckern und Telefonen.</p>
+          <ul class="mini-liste"><li>Leasing möglich</li><li>Fertig eingerichtet</li><li>Datenschutzgerechte Entsorgung</li></ul>
+        </article>
+        <article class="karte einblenden">
+          <div class="icon">&#128202;</div>
+          <h3>Beratung &amp; Planung</h3>
+          <p>Wir analysieren Ihre IT und erstellen einen Fahrplan für die Digitalisierung.</p>
+          <ul class="mini-liste"><li>IT-Check</li><li>Fördermittel-Beratung</li><li>Notfallplan</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="bereich grau">
+    <div class="container">
+      <h2>So arbeiten wir</h2>
+      <p class="bereich-text">In vier Schritten zu einer IT, die einfach funktioniert.</p>
+      <div class="schritte">
+        <div class="schritt einblenden"><span class="nummer">1</span><h3>Erstgespräch</h3><p>Kostenlos und unverbindlich – wir hören zu und verstehen Ihre Anforderungen.</p></div>
+        <div class="schritt einblenden"><span class="nummer">2</span><h3>Analyse</h3><p>Wir prüfen Ihre bestehende IT und finden Schwachstellen.</p></div>
+        <div class="schritt einblenden"><span class="nummer">3</span><h3>Umsetzung</h3><p>Wir installieren und konfigurieren – möglichst ohne Ausfallzeit.</p></div>
+        <div class="schritt einblenden"><span class="nummer">4</span><h3>Betreuung</h3><p>Wir überwachen Ihre Systeme und sind da, wenn es klemmt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Status-Monitor -->
+  <section class="bereich dunkel" id="status">
+    <div class="container zwei-spalten">
+      <div>
+        <h2>Live-Status</h2>
+        <p>Transparenz ist uns wichtig. Hier sehen Sie den aktuellen Zustand unserer Dienste (Beispieldaten).</p>
+        <p class="klein-grau">Zuletzt geprüft: <span id="statusZeit">–</span></p>
+        <button class="btn" id="statusBtn">Status neu prüfen</button>
+      </div>
+      <ul class="status-liste" id="statusListe">
+        <li><span>Cloud-Speicher</span><span class="status ok">Online</span></li>
+        <li><span>E-Mail-Server</span><span class="status ok">Online</span></li>
+        <li><span>VPN-Gateway</span><span class="status ok">Online</span></li>
+        <li><span>Backup-System</span><span class="status ok">Online</span></li>
+        <li><span>Ticketsystem</span><span class="status ok">Online</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Preise -->
+  <section class="bereich" id="preise">
+    <div class="container">
+      <h2>Unsere Pakete</h2>
+      <p class="bereich-text">Feste monatliche Preise – keine versteckten Kosten. Alle Preise zzgl. MwSt., pro Arbeitsplatz.</p>
+      <div class="preis-schalter">
+        <span>Monatlich</span>
+        <label class="schalter"><input type="checkbox" id="preisToggle"><span class="regler"></span></label>
+        <span>Jährlich <em class="rabatt">-15 %</em></span>
+      </div>
+      <div class="karten drei preise">
+        <div class="preis-karte einblenden">
+          <h3>Basic</h3>
+          <p class="preis"><span class="betrag" data-preis="29">29</span> €<small>/Monat</small></p>
+          <ul>
+            <li>&#10004; Fernwartung</li>
+            <li>&#10004; Virenschutz</li>
+            <li>&#10004; Updates &amp; Patches</li>
+            <li class="nein">&#10008; Vor-Ort-Service</li>
+            <li class="nein">&#10008; 24/7-Hotline</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline-dunkel">Anfragen</a>
+        </div>
+        <div class="preis-karte beliebt einblenden">
+          <span class="badge">Beliebt</span>
+          <h3>Business</h3>
+          <p class="preis"><span class="betrag" data-preis="59">59</span> €<small>/Monat</small></p>
+          <ul>
+            <li>&#10004; Alles aus Basic</li>
+            <li>&#10004; Tägliches Cloud-Backup</li>
+            <li>&#10004; Vor-Ort-Service (4 Std./Monat)</li>
+            <li>&#10004; Firewall-Management</li>
+            <li class="nein">&#10008; 24/7-Hotline</li>
+          </ul>
+          <a href="#kontakt" class="btn">Anfragen</a>
+        </div>
+        <div class="preis-karte einblenden">
+          <h3>Premium</h3>
+          <p class="preis"><span class="betrag" data-preis="99">99</span> €<small>/Monat</small></p>
+          <ul>
+            <li>&#10004; Alles aus Business</li>
+            <li>&#10004; 24/7-Notfall-Hotline</li>
+            <li>&#10004; Unbegrenzter Vor-Ort-Service</li>
+            <li>&#10004; Monitoring rund um die Uhr</li>
+            <li>&#10004; Jährlicher Sicherheits-Check</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline-dunkel">Anfragen</a>
+        </div>
+      </div>
+
+      <!-- Kostenrechner -->
+      <div class="rechner einblenden">
+        <h3>&#129518; Kostenrechner</h3>
+        <div class="rechner-felder">
+          <label>Anzahl Arbeitsplätze: <strong id="plaetzeWert">10</strong>
+            <input type="range" id="plaetze" min="1" max="100" value="10">
+          </label>
+          <label>Paket:
+            <select id="paketWahl">
+              <option value="29">Basic (29 €)</option>
+              <option value="59" selected>Business (59 €)</option>
+              <option value="99">Premium (99 €)</option>
+            </select>
+          </label>
+        </div>
+        <p class="rechner-ergebnis">Ihre monatlichen Kosten: <strong id="ergebnis">590 €</strong></p>
       </div>
     </div>
   </section>
@@ -97,6 +227,16 @@
         <li>&#10004; Datenschutz nach DSGVO</li>
       </ul>
     </div>
+    <div class="container zeitstrahl">
+      <h3>Unsere Geschichte</h3>
+      <div class="zeitstrahl-linie">
+        <div class="ereignis"><strong>2014</strong><p>Gründung in einer Garage mit 2 Mitarbeitern</p></div>
+        <div class="ereignis"><strong>2017</strong><p>Erstes eigenes Büro und erster Azubi</p></div>
+        <div class="ereignis"><strong>2020</strong><p>Start des Cloud-Angebots</p></div>
+        <div class="ereignis"><strong>2023</strong><p>100. Kunde &amp; ISO-27001-Zertifizierung</p></div>
+        <div class="ereignis"><strong>2026</strong><p>25 Mitarbeiter und neues Rechenzentrum</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- Team -->
@@ -104,12 +244,99 @@
     <div class="container">
       <h2>Unser Team</h2>
       <p class="bereich-text">Die Menschen hinter den Servern.</p>
-      <div class="karten team">
-        <div class="karte person"><div class="avatar">MS</div><h3>Max Schneider</h3><p>Geschäftsführer</p></div>
-        <div class="karte person"><div class="avatar">LK</div><h3>Lena Krüger</h3><p>Netzwerkadministratorin</p></div>
-        <div class="karte person"><div class="avatar">TB</div><h3>Tim Becker</h3><p>Cloud-Architekt</p></div>
-        <div class="karte person"><div class="avatar">AY</div><h3>Aylin Yilmaz</h3><p>Auszubildende FISI</p></div>
+      <div class="karten">
+        <div class="karte person einblenden"><div class="avatar">MS</div><h3>Max Schneider</h3><p>Geschäftsführer</p><p class="zitat">„Uptime ist keine Glückssache.“</p></div>
+        <div class="karte person einblenden"><div class="avatar">LK</div><h3>Lena Krüger</h3><p>Netzwerkadministratorin</p><p class="zitat">„Ping mich an!“</p></div>
+        <div class="karte person einblenden"><div class="avatar">TB</div><h3>Tim Becker</h3><p>Cloud-Architekt</p><p class="zitat">„Es gibt keine Cloud, nur die Computer anderer Leute.“</p></div>
+        <div class="karte person einblenden"><div class="avatar">AY</div><h3>Aylin Yilmaz</h3><p>Auszubildende FISI</p><p class="zitat">„Hast du es schon mal neu gestartet?“</p></div>
       </div>
+    </div>
+  </section>
+
+  <!-- Referenzen -->
+  <section class="bereich grau" id="referenzen">
+    <div class="container">
+      <h2>Das sagen unsere Kunden</h2>
+      <p class="bereich-text">Ein paar Stimmen aus über 150 Projekten.</p>
+      <div class="slider">
+        <button class="slider-btn" id="zurueck" aria-label="Zurück">&#10094;</button>
+        <div class="slider-fenster">
+          <div class="bewertung aktiv">
+            <div class="sterne">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>„Seit 404 Network unsere Praxis betreut, hatten wir keinen einzigen Ausfall mehr. Absolute Empfehlung!“</p>
+            <strong>Dr. Sabine Wolf</strong><span>Zahnarztpraxis Wolf</span>
+          </div>
+          <div class="bewertung">
+            <div class="sterne">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>„Die Umstellung auf die Cloud lief über ein Wochenende – am Montag lief alles. Super Team!“</p>
+            <strong>Jonas Hartmann</strong><span>Hartmann Logistik GmbH</span>
+          </div>
+          <div class="bewertung">
+            <div class="sterne">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p>„Unser neues Schul-WLAN funktioniert in jedem Klassenraum. Die Schüler freuen sich (die Lehrer auch).“</p>
+            <strong>Petra Neumann</strong><span>Gesamtschule Musterstadt</span>
+          </div>
+        </div>
+        <button class="slider-btn" id="weiter" aria-label="Weiter">&#10095;</button>
+      </div>
+      <div class="punkte" id="punkte"></div>
+      <div class="kunden-logos">
+        <span>Praxis Wolf</span><span>Hartmann Logistik</span><span>GS Musterstadt</span><span>Kanzlei Berg</span><span>Bäckerei Korn</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Karriere -->
+  <section class="bereich" id="karriere">
+    <div class="container">
+      <h2>Karriere</h2>
+      <p class="bereich-text">Werde Teil unseres Teams! Wir bieten flexible Arbeitszeiten, Homeoffice, Weiterbildungen und den besten Kaffee der Stadt.</p>
+      <div class="jobs">
+        <details class="job">
+          <summary><span>Fachinformatiker/in Systemintegration (m/w/d)</span><span class="job-tag">Vollzeit</span></summary>
+          <p>Du betreust Netzwerke und Server unserer Kunden, richtest Arbeitsplätze ein und hilfst im Support. Abgeschlossene Ausbildung als FISI oder vergleichbar.</p>
+        </details>
+        <details class="job">
+          <summary><span>Ausbildung Fachinformatiker/in (m/w/d) – Start 2027</span><span class="job-tag azubi">Ausbildung</span></summary>
+          <p>3 Jahre Ausbildung mit Praxis vom ersten Tag an. Voraussetzung: guter Realschulabschluss oder Abitur und Interesse an Technik.</p>
+        </details>
+        <details class="job">
+          <summary><span>IT-Security Consultant (m/w/d)</span><span class="job-tag">Vollzeit</span></summary>
+          <p>Du berätst Kunden zu IT-Sicherheit, führst Audits durch und schulst Mitarbeiter im Umgang mit Phishing.</p>
+        </details>
+        <details class="job">
+          <summary><span>Werkstudent/in IT-Support (m/w/d)</span><span class="job-tag teilzeit">Teilzeit</span></summary>
+          <p>Unterstütze unser Support-Team 15–20 Stunden pro Woche neben dem Studium.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bereich grau" id="faq">
+    <div class="container schmal">
+      <h2>Häufige Fragen</h2>
+      <p class="bereich-text">Ihre Frage ist nicht dabei? Rufen Sie uns einfach an.</p>
+      <details class="faq">
+        <summary>Wie schnell sind Sie bei einem Notfall da?</summary>
+        <p>Per Fernwartung meist innerhalb von 30 Minuten, vor Ort im Umkreis von 50 km innerhalb von 2 Stunden.</p>
+      </details>
+      <details class="faq">
+        <summary>Gibt es eine Mindestvertragslaufzeit?</summary>
+        <p>Unsere Pakete sind monatlich kündbar. Bei jährlicher Zahlung erhalten Sie 15 % Rabatt.</p>
+      </details>
+      <details class="faq">
+        <summary>Wo werden meine Daten gespeichert?</summary>
+        <p>Ausschließlich in ISO-zertifizierten Rechenzentren in Deutschland – DSGVO-konform.</p>
+      </details>
+      <details class="faq">
+        <summary>Betreuen Sie auch Privatkunden?</summary>
+        <p>Unser Fokus liegt auf Unternehmen, aber für Homeoffice-Arbeitsplätze unserer Geschäftskunden helfen wir gerne.</p>
+      </details>
+      <details class="faq">
+        <summary>Warum heißen Sie eigentlich „404“?</summary>
+        <p>Weil wir dafür sorgen, dass Ihre IT nie „nicht gefunden“ oder „nicht verfügbar“ ist. Ein bisschen Humor gehört dazu!</p>
+      </details>
     </div>
   </section>
 
@@ -122,11 +349,21 @@
         <p>&#128205; Musterstraße 404, 12345 Musterstadt<br>
            &#128222; 0123 / 404 404<br>
            &#9993; info@404-network.example</p>
+        <div class="karte-platzhalter">&#128205; Hier finden Sie uns<br><small>Musterstraße 404</small></div>
       </div>
       <form class="formular" id="kontaktForm">
         <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="text" name="firma" placeholder="Firma (optional)">
         <input type="email" name="email" placeholder="Ihre E-Mail" required>
+        <select name="thema" required>
+          <option value="">Worum geht es?</option>
+          <option>Beratung / Angebot</option>
+          <option>Technisches Problem</option>
+          <option>Bewerbung</option>
+          <option>Sonstiges</option>
+        </select>
         <textarea name="nachricht" rows="4" placeholder="Ihre Nachricht" required></textarea>
+        <label class="checkbox"><input type="checkbox" required> Ich stimme der Datenschutzerklärung zu.</label>
         <button type="submit" class="btn">Nachricht senden</button>
         <p class="meldung" id="meldung"></p>
       </form>
@@ -134,11 +371,42 @@
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 404 Network GmbH · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="404 Network GmbH" class="footer-logo">
+        <p>Ihr IT-Partner für Netzwerke, Cloud und Sicherheit.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <a href="#leistungen">Cloud-Lösungen</a>
+        <a href="#leistungen">Netzwerktechnik</a>
+        <a href="#leistungen">IT-Sicherheit</a>
+        <a href="#leistungen">IT-Support</a>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#team">Team</a>
+        <a href="#karriere">Karriere</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>IT-Tipps einmal im Monat.</p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="E-Mail" required>
+          <button type="submit" class="btn btn-small">OK</button>
+        </form>
+        <p class="meldung klein" id="newsletterMeldung"></p>
+      </div>
+    </div>
+    <div class="container footer-unten">
+      <p>&copy; 2026 404 Network GmbH · <a href="#">Impressum</a> · <a href="#">Datenschutz</a> · <a href="#">AGB</a></p>
       <p class="klein">Beispiel-Webseite für ein Schulprojekt – alle Daten sind fiktiv.</p>
     </div>
   </footer>
+
+  <button class="nach-oben" id="nachOben" aria-label="Nach oben">&#8593;</button>
 
   <script src="script.js"></script>
 </body>
